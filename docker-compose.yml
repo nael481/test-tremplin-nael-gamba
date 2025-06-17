@@ -6,10 +6,12 @@ services:
     image: mysql:8.4
     volumes:
       - ./mysql:/var/lib/mysql
+      - ./mysql:/etc/mysql/certs
     ports:
       - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=verysecurepassword
+      - MYSQL_DATABASE=form_data
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
