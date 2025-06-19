@@ -1,51 +1,44 @@
-# Test dev web Tremplin
+# Projet Stage - Contact Agence
 
-## Rendu
+---
 
-<span style="color:red">**Rendre le projet sur github, en dépôt publique, envoyer le lien
-à [production@majordhom.fr](mailto:production@majordhom.fr), si vous m'envoyez un fichier zip je regarde pas. :)**</span>
+## À propos de moi
 
-Le README.md de votre projet doit comprendre : 
- - Un petit résumé sur vous : nom / prénom, niveau d'étude, durée du stage, etc.
- - Un screenshot de la page créée
- - Comment démarrer l'environnement de votre projet
- - Les réponses à ces questions (pas besoin d'écrire un roman)
-   - Avez-vous trouvé l'exercice facile ou vous a-t-il posé des difficultés ? Si oui, lesquelles ?
-   - Avez-vous appris de nouveaux outils pour répondre à l'exercice ? Si oui, lesquels ?
-   - Pourquoi avoir choisi d'utiliser ces outils ?
-   - Avez-vous utilisé la stack proposée ? Utilisez-vous régulièrement docker ?
+Je m'appelle **Nael Gamba**, je suis en **2ème année** à l'école et je réalise un stage d'une durée de **6 mois**.
 
+---
 
-## Démarrer la stack LAMP (optionnel)
-_Vous pouvez aussi monter votre propre serveur de développement._
+## Capture d'écran
 
-Cloner le repo github
-> git clone https://github.com/Majordhom/test-tremplin.git
+Voici une capture d'écran de la page créée dans ce projet :
 
-Démarer la stack Apache / Mysql / PhpMyAdmin avec docker.
+![Screenshot de la page contact](![Screenshot from 2025-06-19 05-27-17](https://github.com/user-attachments/assets/9b3b1b63-dd7e-4158-8b7c-bc27580107cb)
+)
 
-> docker compose up -d
+---
 
-Apache est ouvert sur le port :80 (http://localhost:80).\
-Phpmyadmin est ouvert sur le port :8080 (http://localhost:8080)\
-Mysql est ouvert sur :3306\
-\
-Utilisateur et mdp mysql: `root` et `verysecurepassword`
+## Démarrage de l'environnement avec Docker
 
-## Exercice
+Pour lancer le projet, suivez ces étapes :
 
-*Limite de temps: 2 jours*
+1. Assurez-vous que Docker et Docker Compose sont installés sur votre machine.
+2. Placez-vous dans le dossier racine du projet où se trouve le fichier `docker-compose.yml`.
+3. Lancez la commande suivante dans votre terminal :
 
-![alt text](./maquette.png)
+```bash
+docker-compose up --build
 
-Vous devez intégrer cette maquette au site web de l'agence, enregistrez les données du formulaire dans la base de
-données.
-Nous voulons voir votre façon d'intégrer une maquette de manière *responsive*, comment vous organisez votre code (split des fichiers, commentaires, balises html, écriture des fonctions ...), et
-comment vous  gérez la sécurité de celui-ci.
+```
+Questions / Réponses
 
-Le but est de montrer ce que vous savez faire: 
-- Intégrer une maquette front avec minutie
-- Connaissance d'un framework front ou back (React, Angular, Typescript, Laravel, Symfony, NextJS ...) 
-- Autres outils pour la gestion de dates, d'un captcha etc.
+    Avez-vous trouvé l'exercice facile ou vous a-t-il posé des difficultés ?
+    Oui, il m'a posé des difficultés, notamment au niveau du frontend.
 
-Bonne chance !
+    Avez-vous appris de nouveaux outils pour répondre à l'exercice ?
+    Oui, j'ai pu approfondir mes connaissances sur Next.js.
+
+    Pourquoi avoir choisi d'utiliser ces outils ?
+    Parce qu'ils sont plus intéressants et performants pour ce type de projet.
+
+    Avez-vous utilisé la stack proposée ? Utilisez-vous régulièrement Docker ?
+    Oui, j'ai utilisé Docker pour ce projet. Cependant, je ne l'utilise pas régulièrement ; je connais Docker mais ce n'est pas un outil que j'utilise au quotidien.
